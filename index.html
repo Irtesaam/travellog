@@ -14,6 +14,17 @@
             scroll-behavior: smooth;
             /*for smooth scrolling when clicked on an anchor tag*/
         }
+
+       @media (max-width: 991px) {
+            .d-none {
+                display: block !important;   /* fixes text on carousels in mobile orientation*/
+            }
+            .full-width {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
     </style>
     <title>Trave Blog</title>
 </head>
@@ -114,7 +125,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success btn-sm">Login</button>
-                    <button  href="" type="button" data-toggle="modal" data-target="#signupModal" class="btn btn-sm btn-danger" data-dismiss="modal">Sign up</button>
+                    <button href="" type="button" data-toggle="modal" data-target="#signupModal"
+                        class="btn btn-sm btn-danger" data-dismiss="modal">Sign up</button>
                 </div>
             </div>
         </div>
@@ -227,7 +239,7 @@
                     <a href="#" class="stretched-link">Continue reading</a>
                 </div>
                 <div class="col-auto d-none d-lg-block">
-                    <img class="bd-placeholder-img" width="200" height="250" src="trend1.jpg"
+                    <img class="bd-placeholder-img full-width" width="200" height="250" src="trend1.jpg"
                         preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
                         aria-label="Placeholder: Thumbnail">
                 </div>
@@ -245,7 +257,7 @@
                     <a href="#" class="stretched-link">Continue reading</a>
                 </div>
                 <div class="col-auto d-none d-lg-block">
-                    <img class="bd-placeholder-img" width="200" height="250" src="trend2.jpg"
+                    <img class="bd-placeholder-img full-width" width="200" height="250" src="trend2.jpg"
                         preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
                         aria-label="Placeholder: Thumbnail">
                 </div>
@@ -260,12 +272,12 @@
                     <strong class="d-inline-block mb-2 text-warning">World</strong>
                     <h3 class="mb-0">Jaisalmer</h3>
                     <div class="mb-1 text-muted">Nov 12</div>
-                    <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+                    <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
                         additional content.</p>
                     <a href="#" class="stretched-link">Continue reading</a>
                 </div>
                 <div class="col-auto d-none d-lg-block">
-                    <img class="bd-placeholder-img" width="200" height="250" src="trend3.jpg"
+                    <img class="bd-placeholder-img full-width" width="200" height="250" src="trend3.jpg"
                         preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
                         aria-label="Placeholder: Thumbnail">
                 </div>
@@ -283,7 +295,7 @@
                     <a href="#" class="stretched-link">Continue reading</a>
                 </div>
                 <div class="col-auto d-none d-lg-block">
-                    <img class="bd-placeholder-img" width="200" height="250" src="trend4.jpg"
+                    <img class="bd-placeholder-img full-width" width="200" height="250" src="trend4.jpg"
                         preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
                         aria-label="Placeholder: Thumbnail">
                 </div>
